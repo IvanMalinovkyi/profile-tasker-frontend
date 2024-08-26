@@ -1,0 +1,19 @@
+.profile-icon__container {
+  @apply relative hidden md:flex ml-4;
+}
+
+.profile-icon__button {
+  @apply cursor-pointer flex items-center;
+}
+
+.profile-icon__icon {
+  @apply flex items-center justify-center w-8 h-8 text-2xl text-white bg-blue-800 rounded uppercase;
+}
+
+.profile-icon__dropdown-menu {
+  @apply absolute right-0 mt-9 w-48 bg-white border border-gray-300 rounded shadow-lg z-10;
+}
+
+.profile-icon__dropdown-menu-item {
+  @apply block w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-100;
+}

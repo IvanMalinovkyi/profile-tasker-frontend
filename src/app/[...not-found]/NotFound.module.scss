@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-grow items-center justify-center bg-gray-100;
+}
+
+.area {
+  @apply p-6 bg-white rounded-lg shadow-lg;
+}
+
+.title {
+  @apply text-3xl font-bold text-gray-800;
+}
+
+.info {
+  @apply text-gray-600;
+}
+
+.link {
+  @apply inline-block px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600;
+}

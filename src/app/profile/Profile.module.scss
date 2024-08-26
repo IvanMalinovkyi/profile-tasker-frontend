@@ -1,0 +1,43 @@
+.container {
+  @apply bg-gray-100 flex flex-grow justify-center items-center;
+}
+
+.card {
+  @apply my-8 p-8 w-full max-w-2xl bg-white rounded-lg shadow-lg;
+}
+
+.profileImageContainer {
+  @apply flex justify-center mb-6;
+}
+
+.profileImage {
+  @apply w-32 h-32 rounded-full object-cover;
+}
+
+.formLabel {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.formInput {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+}
+
+.formTextarea {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-32;
+}
+
+.submitButton {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none;
+}
+
+.formGroup {
+  @apply mb-4;
+}
+
+.formContainer {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.form {
+  @apply bg-white shadow-md rounded-lg p-8 w-full max-w-2xl;
+}

@@ -1,0 +1,19 @@
+.button {
+  @apply px-4 h-10 rounded cursor-pointer flex gap-2 items-center justify-center font-medium transition-colors disabled:pointer-events-none disabled:opacity-50;
+}
+
+.primary {
+  @apply text-white border rounded-md bg-violet-600  shadow shadow-teal-500/30;
+}
+
+.secondary {
+  @apply text-white bg-rose-500 hover:bg-rose-600 shadow shadow-rose-500/30;
+}
+
+.outlined {
+  @apply text-slate-700 hover:text-rose-600 hover:underline;
+}
+
+.danger {
+  @apply text-rose-600 px-1 hover:underline h-auto;
+}

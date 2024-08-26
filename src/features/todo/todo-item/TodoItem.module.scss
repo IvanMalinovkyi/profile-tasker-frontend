@@ -1,0 +1,19 @@
+.todoItem {
+  @apply flex items-center justify-between bg-gray-100 rounded-lg p-4;
+}
+
+.checkbox {
+  @apply mr-2 h-5 w-5 text-green-500 cursor-pointer;
+}
+
+.todoText {
+  @apply flex-1 text-base font-bold text-gray-800;
+}
+
+.edit {
+  @apply ml-4 cursor-pointer;
+}
+
+.completed {
+  @apply line-through text-gray-500;
+}

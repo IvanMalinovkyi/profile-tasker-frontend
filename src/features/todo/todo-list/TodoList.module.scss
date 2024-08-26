@@ -1,0 +1,19 @@
+.form-container {
+  @apply w-full h-full mt-10;
+}
+
+.form {
+  @apply bg-white rounded pt-6 pb-8 mb-4;
+}
+
+.inputWrapper {
+  @apply mb-4 h-max flex items-center w-full;
+}
+
+.inputField {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none h-10;
+}
+
+.submitButton {
+  @apply ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none h-10;
+}

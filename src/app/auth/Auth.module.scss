@@ -1,0 +1,28 @@
+.auth {
+  &-container {
+    @apply flex flex-grow justify-center items-center bg-slate-100;
+  }
+  &-box {
+    @apply shadow-xl px-8 pb-8 pt-8 bg-white rounded-xl space-y-6;
+  }
+
+  &-form {
+    @apply w-full sm:w-[400px] space-y-6;
+  }
+
+  &-heading {
+    @apply text-center mt-4;
+  }
+
+  &-field {
+    @apply mb-4;
+  }
+
+  &-button-container {
+    @apply flex items-center justify-center mt-4 gap-5;
+  }
+
+  &__toggle-account {
+    @apply flex items-center;
+  }
+}

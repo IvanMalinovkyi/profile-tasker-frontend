@@ -1,0 +1,19 @@
+.header {
+  @apply flex justify-between items-center w-full h-20 px-4 text-black bg-white shadow sticky top-0;
+
+  .logo {
+    @apply flex items-center text-4xl ml-2 hover:transition ease-in-out delay-150 cursor-pointer;
+  }
+
+  .nav {
+    @apply hidden md:flex items-center;
+  }
+
+  .menu-icon {
+    @apply cursor-pointer pr-4 z-10 md:hidden;
+  }
+
+  .mobile-menu {
+    @apply flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-300;
+  }
+}

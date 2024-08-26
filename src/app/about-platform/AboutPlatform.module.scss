@@ -1,0 +1,35 @@
+.section {
+  @apply flex-grow flex flex-col justify-center items-center bg-gray-100 py-12 px-5;
+}
+
+.container {
+  @apply max-w-5xl;
+}
+
+.title {
+  @apply text-5xl  mb-4;
+}
+
+.subtitle {
+  @apply text-lg text-gray-700 mb-8 sm:text-xl text-center;
+}
+
+.feature-wrap {
+  @apply space-y-8 flex flex-col justify-center;
+}
+
+.feature {
+  @apply p-6 bg-white rounded-lg shadow-md w-4/5;
+}
+
+.feature-title {
+  @apply text-lg sm:text-xl font-bold mb-2;
+}
+
+.feature-text {
+  @apply text-gray-700 sm:text-lg;
+}
+
+.feature--even {
+  @apply self-end;
+}

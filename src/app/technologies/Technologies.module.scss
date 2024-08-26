@@ -1,0 +1,23 @@
+.container {
+  @apply flex-grow bg-gray-100 py-12 px-4;
+}
+
+.container-wrap {
+  @apply max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.title {
+  @apply text-4xl font-bold text-center mb-8;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 flex flex-col justify-center items-center text-center;
+}
+
+.techName {
+  @apply text-xl font-bold mb-2;
+}
+
+.version {
+  @apply text-gray-600;
+}
