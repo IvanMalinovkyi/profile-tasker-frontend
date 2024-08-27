@@ -3,7 +3,7 @@ import Auth from "./Auth";
 import { NO_INDEX_PAGE } from "@/shared/constants/seo.constants";
 
 export const metadata: Metadata = {
-  title: "Authorization",
+  title: "Auth",
   ...NO_INDEX_PAGE,
 };
 
