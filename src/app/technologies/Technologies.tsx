@@ -10,6 +10,7 @@ export default function Technologies() {
   const { data: response, isLoading } = useQuery({
     queryKey: ["get technologies"],
     queryFn: () => technologyService.getAll(),
+    retry: false,
   });
 
   const technologies = response?.data ?? [];
