@@ -21,17 +21,16 @@ export function useGetUserProfile() {
 }
 
 export function useLogoutUser() {
-  const queryClient = useQueryClient();
-
-  const { mutate, isPending, isSuccess } = useMutation({
+  const {
+    mutate,
+    isPending,
+    isSuccess: isLogoutSuccess,
+  } = useMutation({
     mutationKey: ["logout"],
     mutationFn: () => authService.logout(),
-    onSuccess() {
-      queryClient.invalidateQueries({ queryKey: ["user"] });
-    },
   });
 
-  return { mutate, isPending, isSuccess };
+  return { mutate, isPending, isLogoutSuccess };
 }
 
 export function useUpdateUser() {

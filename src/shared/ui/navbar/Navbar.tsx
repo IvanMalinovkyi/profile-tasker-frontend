@@ -14,12 +14,14 @@ import {
   useGetUserProfile,
   useLogoutUser,
 } from "@/shared/hooks/useUserMutation";
+import { useQueryClient } from "@tanstack/react-query";
 
 const Navbar = () => {
+  const queryClient = useQueryClient();
   const router = useRouter();
   const pathname = usePathname();
   const { user, isLoading, isSuccess } = useGetUserProfile();
-  const { mutate: logoutUser } = useLogoutUser();
+  const { mutate: logoutUser, isLogoutSuccess } = useLogoutUser();
   const [isMobile, setIsMobile] = useState(false);
   const loginPaths = { link: PAGES.AUTH, name: "Увійти" };
   const isAuthPage = pathname === "/auth";
@@ -30,7 +32,12 @@ const Navbar = () => {
     if (isMobile) {
       setIsMobile(!isMobile);
     }
-    router.push(PAGES.AUTH);
+
+    if (isLogoutSuccess) {
+      console.log("isLogoutSuccess:", isLogoutSuccess);
+      queryClient.invalidateQueries({ queryKey: ["user"] });
+      router.push(PAGES.AUTH);
+    }
   };
 
   return (
@@ -60,7 +67,7 @@ const Navbar = () => {
           />
         ) : (
           <NavItem
-            key={"Увійти"}
+            key={loginPaths.link}
             item={loginPaths}
           />
         )}
