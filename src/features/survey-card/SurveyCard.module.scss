@@ -3,7 +3,7 @@
 }
 
 .survey-card {
-  @apply max-w-4xl w-full bg-white shadow-md rounded-lg p-8;
+  @apply max-w-4xl w-full bg-white shadow-md rounded-lg p-8  relative;
 }
 
 .survey-card-name {

@@ -12,9 +12,9 @@ export default function QuestionnairePage() {
   return isLoading ? (
     <Loading />
   ) : isError || !questionnaire ? (
-    <div>
-      <Heading title="Виникла помилка при завантаженні даних або дані відсутні."></Heading>
-    </div>
+    <Heading
+      size="2xl"
+      title="Виникла помилка при завантаженні даних або дані відсутні."></Heading>
   ) : (
     <div>
       <SurveyCard questionnaire={questionnaire}>

@@ -1,5 +1,5 @@
 .header {
-  @apply flex justify-between items-center w-full h-20 px-4 text-black bg-white shadow sticky top-0;
+  @apply flex justify-between items-center w-full h-20 px-4 text-black bg-white shadow sticky top-0 z-10;
 
   .logo {
     @apply flex items-center text-4xl ml-2 hover:transition ease-in-out delay-150 cursor-pointer;

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(process.env.APP_URL as string),
+  icons: {
+    icon: [
+      {
+        url: "/images/icon_name.svg",
+        href: "/images/icon_name.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
