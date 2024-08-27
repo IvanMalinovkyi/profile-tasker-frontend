@@ -16,10 +16,8 @@ export default function QuestionnairePage() {
       size="2xl"
       title="Виникла помилка при завантаженні даних або дані відсутні."></Heading>
   ) : (
-    <div>
-      <SurveyCard questionnaire={questionnaire}>
-        <TodoList />
-      </SurveyCard>
-    </div>
+    <SurveyCard questionnaire={questionnaire}>
+      <TodoList />
+    </SurveyCard>
   );
 }

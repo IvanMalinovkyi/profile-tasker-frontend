@@ -1,5 +1,6 @@
 .survey-card-wrapper {
-  @apply w-full h-full flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8;
+  @apply w-full flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8;
+  height: calc(100vh - 80px);
 }
 
 .survey-card {
