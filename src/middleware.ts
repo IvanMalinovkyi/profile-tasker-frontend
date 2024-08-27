@@ -4,11 +4,11 @@ import { PAGES } from "./shared/config/routes";
 
 export function middleware(request: NextRequest) {
   console.log("RUNNING");
-  const { url, cookies } = request;
+  const { url } = request;
 
   const res = NextResponse.next();
 
-  const accessToken = cookies.get(EnumTokens.ACCESS_TOKEN)?.value;
+  const accessToken = request.cookies.get(EnumTokens.ACCESS_TOKEN)?.value;
 
   const isAuthPage = url.includes(PAGES.AUTH);
   const isProfilePage = url.includes(PAGES.PROFILE);
