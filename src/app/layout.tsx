@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   openGraph: OPEN_GRAPH,
   twitter: TWITTER,
+  verification: {
+    google: "RpTUeUJHEblZdgmcqtMi8Jt30fGkEKr-GfCVSvTRWeE",
+  },
 };
 
 export default function RootLayout({
