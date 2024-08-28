@@ -23,7 +23,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (isQuestionnairePage) {
-    if (!!accessToken) {
+    if (!Boolean(accessToken)) {
       return NextResponse.redirect(new URL(PAGES.AUTH, request.url));
     }
     return res;
