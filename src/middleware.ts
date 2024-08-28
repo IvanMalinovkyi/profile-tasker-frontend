@@ -15,6 +15,7 @@ export function middleware(request: NextRequest) {
     if (!!accessToken) {
       return NextResponse.redirect(new URL(PAGES.HOME, request.url));
     }
+    return res;
   }
 
   if (!accessToken && isProfilePage) {
