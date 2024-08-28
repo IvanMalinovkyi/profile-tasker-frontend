@@ -22,9 +22,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(PAGES.HOME, request.url));
   }
 
-  //if (!accessToken && isQuestionnairePage) {
-  //  return NextResponse.redirect(new URL(PAGES.AUTH, request.url));
-  //}
+  if (isQuestionnairePage) {
+    if (!!accessToken) {
+      return NextResponse.redirect(new URL(PAGES.AUTH, request.url));
+    }
+    return res;
+  }
 
   return res;
 }
