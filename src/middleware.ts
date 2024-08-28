@@ -13,6 +13,7 @@ export function middleware(request: NextRequest) {
 
   if (isAuthPage) {
     if (accessToken) {
+      console.log(accessToken, isAuthPage);
       return NextResponse.redirect(new URL(PAGES.HOME, request.url));
     }
   }
