@@ -12,8 +12,7 @@ export function middleware(request: NextRequest) {
   const isQuestionnairePage = request.url.includes(PAGES.QUESTIONNAIRE);
 
   if (isAuthPage) {
-    if (accessToken) {
-      console.log(accessToken, isAuthPage);
+    if (!!accessToken) {
       return NextResponse.redirect(new URL(PAGES.HOME, request.url));
     }
   }
