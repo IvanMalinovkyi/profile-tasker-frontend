@@ -1,6 +1,7 @@
 .survey-card-wrapper {
-  @apply w-full flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8;
-  height: calc(100vh - 80px);
+  @apply w-full flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 h-full;
+  min-height: calc(100vh - 80px);
+  height: 100%;
 }
 
 .survey-card {
@@ -16,7 +17,7 @@
 }
 
 .survey-card-description {
-  @apply text-lg text-gray-700 text-center mb-6;
+  @apply text-lg text-gray-700 text-center;
 }
 
 .survey-card-social-links {

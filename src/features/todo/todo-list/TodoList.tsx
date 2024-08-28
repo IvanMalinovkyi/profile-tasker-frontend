@@ -57,7 +57,7 @@ export function TodoList() {
   return isLoading ? (
     <Loading />
   ) : (
-    <div className={styles["form-container"]}>
+    <>
       <form
         className={`${styles.form}`}
         onSubmit={handleSubmit}>
@@ -92,6 +92,6 @@ export function TodoList() {
           />
         ))}
       </ul>
-    </div>
+    </>
   );
 }

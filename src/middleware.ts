@@ -12,6 +12,7 @@ export function middleware(request: NextRequest) {
   const isQuestionnairePage = request.url.includes(PAGES.QUESTIONNAIRE);
 
   if (isAuthPage) {
+    console.log("accessToken1:", accessToken);
     if (!!accessToken) {
       return NextResponse.redirect(new URL(PAGES.HOME, request.url));
     }
@@ -22,12 +23,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(PAGES.HOME, request.url));
   }
 
-  if (isQuestionnairePage) {
-    if (!Boolean(accessToken)) {
-      return NextResponse.redirect(new URL(PAGES.AUTH, request.url));
-    }
-    return res;
-  }
+  //if (isQuestionnairePage) {
+  //  console.log("accessToken2:", accessToken);
+  //  if (!Boolean(accessToken)) {
+  //    return NextResponse.redirect(new URL(PAGES.AUTH, request.url));
+  //  }
+  //  return res;
+  //}
 
   return res;
 }
